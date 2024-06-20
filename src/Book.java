@@ -18,7 +18,7 @@ public class Book {
     }
 
     public String toString() {
-        return "Имя " + this.name + ", Author " + this.publicationYear;
+        return "Имя " + this.name + ", Author " + this.author;
     }
     public boolean equals(Object o) {
         if (this == o) return  true;
