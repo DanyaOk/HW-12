@@ -6,9 +6,9 @@ public class Main {
 
         Author Jack = new Author("Jack", "Epping");
         Book Reflextion = new Book("Рефлексия",Jack, currentYear);
-        System.out.println("Автора книги - " + Reflextion.getName() + " зовут " + Jack.getName() + " " + Jack.getsurname() + ", год издания книги " + Reflextion.getpublicationYear());
-        Reflextion.setpublicationYear(2015);
-        System.out.println("Автора книги - " + Reflextion.getName() + " зовут " + Jack.getName() + " " + Jack.getsurname() + ", год издания книги " + Reflextion.getpublicationYear());
+        System.out.println(Reflextion);
+        Reflextion.setPublicationYear(2015);
+        System.out.println(Reflextion);
 
 
         Author Dwayne = new Author("Dwayne", "Johnson");
@@ -16,6 +16,8 @@ public class Main {
 
         Author Danya = new Author("Danya", "Slyusarev");
         Book MillitaryEducation = new Book("Военное обучение", Danya, currentYear);
+
+        System.out.println(Dwayne.equals(Danya));
 
 
     }
